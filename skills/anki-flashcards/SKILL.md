@@ -45,7 +45,7 @@ Read the request for these and pass them instead of falling back to defaults:
 - "type the answer" → `input`; quiz with choices → `mcq`
 - a deck name or subject → `deckName`, nested with `::` (`Japanese::JLPT N5`)
 - tags the user names → `tags`
-- "read it aloud", pronunciation, language decks → text-to-speech. This only adds Anki's `{{tts}}` tag; Anki speaks on the user's device.
+- "read it aloud", "with audio", pronunciation → text-to-speech. Only when the user asks for it; it adds Anki's `{{tts}}` tag and Anki speaks on the user's device.
 
 ## After the deck is built
 

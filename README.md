@@ -11,6 +11,18 @@ In Claude, add 2anki from the plugin directory. In Claude Code:
 /plugin install 2anki@2anki
 ```
 
+## Use it
+
+Ask in your own words. For example:
+
+- Attach `vocab.csv` and write: `Make Anki flashcards from this file.`
+- Paste lecture notes and write: `Turn these into cloze cards in a deck called Biology::Cell signalling.`
+- `Turn https://en.wikipedia.org/wiki/Beta_blocker into Anki cards about mechanism and side effects.`
+- Attach a photo of handwritten notes and write: `Make flashcards from this page.`
+- `Show me the decks I've made with 2anki.`
+
+Claude builds the deck with 2anki and replies with the card count, a few sample cards, and the download link.
+
 ## What's in the plugin
 
 - **2anki connector** (`.mcp.json`): the hosted MCP server at `https://2anki.net/mcp`. You sign in with your 2anki account through OAuth the first time you use it.

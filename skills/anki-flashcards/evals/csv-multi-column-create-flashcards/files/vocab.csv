@@ -1,0 +1,26 @@
+expression,reading,meaning,tags,id
+水,みず,water,JLPT_N5,n5-001
+火,ひ,fire,JLPT_N5,n5-002
+山,やま,mountain,JLPT_N5,n5-003
+川,かわ,river,JLPT_N5,n5-004
+雨,あめ,rain,JLPT_N5,n5-005
+花,はな,flower,JLPT_N5,n5-006
+犬,いぬ,dog,JLPT_N5,n5-007
+猫,ねこ,cat,JLPT_N5,n5-008
+魚,さかな,fish,JLPT_N5,n5-009
+学校,がっこう,school,JLPT_N5,n5-010
+先生,せんせい,teacher,JLPT_N5,n5-011
+友達,ともだち,friend,JLPT_N5,n5-012
+電車,でんしゃ,train,JLPT_N5,n5-013
+駅,えき,station,JLPT_N5,n5-014
+本,ほん,book,JLPT_N5,n5-015
+今日,きょう,today,JLPT_N5,n5-016
+明日,あした,tomorrow,JLPT_N5,n5-017
+食べる,たべる,to eat,JLPT_N5,n5-018
+飲む,のむ,to drink,JLPT_N5,n5-019
+見る,みる,"to see, to watch",JLPT_N5,n5-020
+行く,いく,to go,JLPT_N5,n5-021
+来る,くる,to come,JLPT_N5,n5-022
+大きい,おおきい,big,JLPT_N5,n5-023
+小さい,ちいさい,small,JLPT_N5,n5-024
+新しい,あたらしい,new,JLPT_N5,n5-025

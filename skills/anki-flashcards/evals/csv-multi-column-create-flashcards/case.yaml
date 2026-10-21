@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: csv-multi-column-create-flashcards
+expected_outcome: |
+  Claude builds the deck with the 2anki convert_to_deck tool, reshaping the 5-column CSV (expression, reading, meaning, tags, id) to front,back so readings and meanings are kept, instead of writing code that generates an .apkg.
+context:
+  scaffold_script: place-files.sh

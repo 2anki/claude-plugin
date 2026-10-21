@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: web-page-focused-cloze
+expected_outcome: |
+  Claude uses 2anki to build a deck from the page and its reply gives the card count, sample cards and the download link.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: pasted-notes-cloze
+expected_outcome: |
+  Claude writes cloze cards from the notes and builds the deck with 2anki create_deck or convert_to_deck, named Biology::Cell signalling.
