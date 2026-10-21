@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "2anki": {
+      "type": "http",
+      "url": "https://2anki.net/mcp"
+    }
+  }
+}

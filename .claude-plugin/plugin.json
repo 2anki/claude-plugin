@@ -1,0 +1,16 @@
+{
+  "name": "2anki",
+  "displayName": "2anki",
+  "version": "1.0.0",
+  "description": "Turn notes, files, web pages and photos into Anki flashcard decks (.apkg) with the 2anki connector.",
+  "author": {
+    "name": "Lær Smart AS",
+    "email": "a@laersmart.no",
+    "url": "https://2anki.net"
+  },
+  "homepage": "https://2anki.net/documentation/reference/mcp",
+  "repository": "https://github.com/2anki/claude-plugin",
+  "license": "MIT",
+  "keywords": ["anki", "flashcards", "spaced-repetition", "study", "apkg"],
+  "privacyPolicyUrl": "https://2anki.net/documentation/misc/privacy-policy"
+}

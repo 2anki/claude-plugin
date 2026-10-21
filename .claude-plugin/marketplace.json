@@ -1,0 +1,15 @@
+{
+  "name": "2anki",
+  "description": "The 2anki plugin: make Anki flashcard decks from notes, files, web pages and photos.",
+  "owner": {
+    "name": "Lær Smart AS",
+    "email": "a@laersmart.no"
+  },
+  "plugins": [
+    {
+      "name": "2anki",
+      "source": "./",
+      "description": "Turn notes, files, web pages and photos into Anki flashcard decks (.apkg) with the 2anki connector."
+    }
+  ]
+}
