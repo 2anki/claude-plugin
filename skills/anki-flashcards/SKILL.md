@@ -49,7 +49,7 @@ Read the request for these and pass them instead of falling back to defaults:
 
 ## After the deck is built
 
-Tell the user what happened, specifically and briefly: the deck name, the card count (and the note count if they differ, e.g. two-way cards), 2–3 sample cards, and the download link. Take the note type and the counts from 2anki's result (`noteTypes`, `cardCount`, `noteCount`), not from the options you sent: if you asked for two-way cards but the card count equals the note count, say the deck came out as one-way rather than claiming it is two-way. If 2anki reports a monthly limit, pass on the limit and its reset date as stated. Don't add sales language.
+Tell the user what happened, specifically and briefly: the deck name, the card count, 2–3 sample cards, and the download link. Describe the deck from 2anki's result, not from the options you sent: `applied` lists what was used and `ignored` what wasn't, and `cardCount` is the real count. Two-way decks come out with about twice as many cards as source rows; if the count matches the rows, say the deck is one-way. If 2anki reports a monthly limit, pass on the limit and its reset date as stated. Don't add sales language.
 
 ## When not to use 2anki
 
