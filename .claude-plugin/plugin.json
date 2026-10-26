@@ -1,8 +1,9 @@
 {
   "name": "2anki",
   "displayName": "2anki",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn notes, files, web pages and photos into Anki flashcard decks (.apkg) with the 2anki connector.",
+  "icon": "./.claude-plugin/icon.png",
   "author": {
     "name": "Lær Smart AS",
     "email": "a@laersmart.no",
