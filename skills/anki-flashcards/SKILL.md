@@ -51,6 +51,20 @@ Read the request for these and pass them instead of falling back to defaults:
 
 Tell the user what happened, specifically and briefly: the deck name, the card count, 2–3 sample cards, and the download link. Describe the deck from 2anki's result, not from the options you sent: `applied` lists what was used and `ignored` what wasn't, and `cardCount` is the real count. Two-way decks come out with about twice as many cards as source rows; if the count matches the rows, say the deck is one-way. If 2anki reports a monthly limit, pass on the limit and its reset date as stated. Don't add sales language.
 
+## Offer to open it in Anki
+
+When you can run shell commands (Claude Code, for example), end your reply by asking whether the user wants the deck downloaded and opened in Anki. Use your question tool if you have one, otherwise ask in one line. Opening the file imports the deck into their Anki collection, so do it only after a yes. If they asked for this up front ("…and open it in Anki"), that is the yes; don't ask again. If they said no earlier in the conversation, don't ask for later decks either.
+
+On a yes:
+
+1. Download to their Downloads folder, named after the deck with `::` replaced by ` - ` and other characters that aren't allowed in file names removed, e.g. `Biology - Cell signalling.apkg`. Don't overwrite an existing file; add ` (2)`, ` (3)`, … instead.
+   `curl -fsSL -o ~/Downloads/"Biology - Cell signalling.apkg" "<downloadUrl>"`
+2. Check that it is a deck: the file starts with `PK` (an .apkg is a zip file). If not, give the user the download link instead.
+3. Open it with the app registered for `.apkg` files: `open` on macOS, `xdg-open` on Linux, `Start-Process` on Windows (PowerShell). Anki starts if needed and imports the deck. On macOS, check first with `open -Ra Anki`; if Anki isn't installed, keep the file, say where it is and point to https://apps.ankiweb.net.
+4. Tell the user where the file is and that Anki should now show the import summary.
+
+This only downloads the deck 2anki built; it isn't generating an .apkg yourself. Without a shell (claude.ai, the Claude apps), don't ask: say that opening the download link and then the downloaded file imports the deck into Anki. Skip the offer when the user studies only on AnkiMobile or AnkiDroid; the link is the way there.
+
 ## When not to use 2anki
 
 - The user explicitly wants code: a genanki script, a Python program, a pipeline they will run themselves.

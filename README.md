@@ -21,12 +21,12 @@ Ask in your own words. For example:
 - Attach a photo of handwritten notes and write: `Make flashcards from this page.`
 - `Show me the decks I've made with 2anki.`
 
-Claude builds the deck with 2anki and replies with the card count, a few sample cards, and the download link.
+Claude builds the deck with 2anki and replies with the card count, a few sample cards, and the download link. In Claude Code, it then asks whether to download the deck and open it in Anki; say yes and the deck is imported straight away. Add `and open it in Anki` to your request to skip the question.
 
 ## What's in the plugin
 
 - **2anki connector** (`.mcp.json`): the hosted MCP server at `https://2anki.net/mcp`. You sign in with your 2anki account through OAuth the first time you use it.
-- **`anki-flashcards` skill**: tells Claude to build decks with the 2anki connector when you ask for flashcards, an Anki deck or an `.apkg` file. It covers which tool fits each kind of input, how to prepare CSV files with more than two columns, and which card options to set.
+- **`anki-flashcards` skill**: tells Claude to build decks with the 2anki connector when you ask for flashcards, an Anki deck or an `.apkg` file. It covers which tool fits each kind of input, how to prepare CSV files with more than two columns, which card options to set, and how to open the finished deck in Anki.
 
 ## Tools
 
@@ -43,7 +43,7 @@ Decks support basic, two-way, cloze, typed-answer and multiple-choice notes, tag
 
 ## Data
 
-The plugin runs no local code. It sends the content you ask to convert to `https://2anki.net/mcp`, which stores the resulting decks in your 2anki account. Photo reading is processed by Anthropic's API on 2anki's behalf. Free accounts have a monthly card limit and a monthly photo limit.
+The plugin ships no local code. When you agree to open a deck in Anki, Claude Code downloads the `.apkg` into your Downloads folder with `curl` and opens it with your system's open command (`open`, `xdg-open` or `Start-Process`). It sends the content you ask to convert to `https://2anki.net/mcp`, which stores the resulting decks in your 2anki account. Photo reading is processed by Anthropic's API on 2anki's behalf. Free accounts have a monthly card limit and a monthly photo limit.
 
 - Privacy policy: https://2anki.net/documentation/misc/privacy-policy
 - Terms of service: https://2anki.net/documentation/misc/terms-of-service

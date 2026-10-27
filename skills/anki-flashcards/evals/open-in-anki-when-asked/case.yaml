@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: open-in-anki-when-asked
+expected_outcome: |
+  Claude builds the deck with 2anki, downloads it into the Downloads folder under a file name made from the deck name, and opens it so Anki imports it, without asking again.

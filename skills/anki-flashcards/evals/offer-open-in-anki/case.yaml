@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: offer-open-in-anki
+expected_outcome: |
+  Claude builds the deck with 2anki, then asks whether to download the deck and open it in Anki, without downloading or opening anything before the user agrees.
